@@ -1,0 +1,966 @@
+/* body{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+} */
+
+.blueBackground{
+    background-color:#4169E1;
+    color: #FFFEFF;
+    /* z-index: -1; */
+}
+
+.blackBackground{
+    background-color:#1E1B18;
+    color:#FFFEFF;
+    /* z-index: -1; */
+}
+
+.headingText{
+    font-family: 'Oswald', sans-serif;
+    /* letter-spacing: 3px; */
+}
+
+.bodyText{
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+}
+
+
+p{
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+}
+
+.offsetWhiteText{
+    color: #FFFEFF;
+}
+
+.offsetBlackText{
+    color: #1E1B18;
+}
+
+
+
+
+
+
+/* navbar styles */
+.customFontSize{
+    font-size: 1.3em;
+}
+
+.logoImage{
+    width: 100%;
+}
+
+.verticalNav{
+    /* z-index: 2; */
+    background-color:#FFFEFF;
+}
+
+nav a.nav-link{
+    color: #1E1B18;
+    margin: 1em 0;
+    padding: .3em 0;
+    text-align: center;
+}
+
+.hoverEffect{
+    -webkit-transition: 0.4s all ease;
+    -moz-transition: 0.4s all ease;
+    -o-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+}
+
+/* navHover */
+.hoverEffect:hover{
+    background-color: rgba(65, 105, 225, .65);
+    color: #FFFEFF;
+}
+
+nav a.selectedLink{
+    background-color: rgba(65, 105, 225, .9);
+    color: #FFFEFF;
+}
+
+
+/* navFooter */
+#navIcon{
+    float: left;
+    width: 50%;
+    transform: rotate(20deg);
+}
+
+.iconWrapper{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+/* font size should be calculated to take up all avaliable space  */
+.fab{
+    font-size: 230%;
+    text-shadow: 5px -3px 6px rgba(30,27,24,.39);
+}
+
+/* icon hover */
+.fab:hover{
+    text-shadow: 2px 2px 20px rgba(30,27,24,.8);
+    color: rgba(65, 105, 225, 1);
+    transform: rotate(-20deg);
+    /* color: #FFFEFF; */
+    -webkit-transition: 0.45s all ease;
+    -moz-transition: 0.45s all ease;
+    -o-transition: 0.45s all ease;
+    transition: 0.45s all ease;
+}
+
+/* responsive navigation */
+/* #responsiveNav{
+
+} */
+
+
+
+
+
+
+
+
+
+/* main section home */
+#ufoImageContainer{
+    width: 20vw;
+    position: absolute;
+    top: 9vh;
+    left: 55vw;
+    
+}
+
+/* animation is inconsistant on safari */
+/* for ufo animation */
+.ufoImage{
+    transform: translate3d(0px, 0rem, 0px);
+    /* animation: ufoRotation 2.7s linear infinite; */
+   
+    animation-name: ufoRotation;
+    animation-duration: 2.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+    /* -webkit-animation: ufoRotation 2.7s linear infinite; */
+    -webkit-animation-name: ufoRotation;
+    -webkit-animation-duration: 2.7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    /* -webkit-animation-fill-mode: forwards; */
+    -moz-animation: ufoRotation 2.7s linear infinite;
+    -o-animation: ufoRotation 2.7s linear infinite;
+}
+
+@keyframes ufoRotation{
+    0% {
+        transform: rotate(0deg) translate(3.5rem) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg) translate(3.5rem) rotate(360deg);
+    }
+}
+@-webkit-keyframes ufoRotation{
+    0% {
+        -webkit-transform: rotate(0deg) translate(3.5rem) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg) translate(3.5rem) rotate(360deg);
+    }
+}
+@-moz-keyframes ufoRotation{
+    0% {
+        -moz-transform: rotate(0deg) translate(3.5rem) rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg) translate(3.5rem) rotate(360deg);
+    }
+}
+@-o-keyframes ufoRotation{
+    0% {
+        -o-transform: rotate(0deg) translate(3.5rem) rotate(0deg);
+    }
+
+    100% {
+        -o-transform: rotate(-360deg) translate(3.5rem) rotate(360deg);
+    }
+}
+
+
+h2.hoverTitleText{
+    font-size: 3.5em;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+p.dropdownText{
+    line-height: 1.8;
+    font-size: 1.3em;
+}
+
+h1.sectionHeading{
+    display: inline-block;
+    letter-spacing: 3.5px;
+    font-size: 2.6em;
+    /* padding: 10px; */
+}
+
+/* for dropDowns */
+.panel-heading, .panel{
+    display: inline-block;
+}
+.dropdownText{
+    width: 50vw;
+    padding-left: 2em;
+}
+   
+.ufoImage{
+    width: 100%;
+}
+.cutomArrowIcon{
+    transform: rotate(90deg);
+    font-size: 3em;
+    margin-right: 0.3em;
+}
+.customArrowIconSelected{
+    transform: rotate(180deg);
+
+}
+
+
+
+/* aboutPage */
+.textStyle{
+    padding-left: 0;
+    line-height: 1.25em;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: .3px;
+}
+.styleIcon{
+    font-size: 3em;
+}
+.styleImage{
+    width: 4em;
+}
+.cutomAboutTextHeader{
+    /* font-size: 3em; */
+    font-size: 3.7vw;
+    letter-spacing: .2px;
+}
+.cutomAboutText{
+    font-size: 2.3em;
+    letter-spacing: .1px;
+}
+.cutomAboutTextBody{
+    font-size: 1.3em;
+}
+
+
+
+
+/* resumePage */
+.cardText{
+    color: #1E1B18;
+}
+#downloadBtnContainer{
+    padding: 20px;
+    background-color: none;
+    width: 30%;
+    text-align: center;
+    float: right;
+    background-color: #285D3B;
+    border-radius: 40px;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, .68);
+}
+
+#downloadBtnContainer:hover{
+    box-shadow: 10px 8px 40px rgba(0, 0, 0,.8);
+    animation: shakeThatBooty 0.3s linear 1;
+    -webkit-animation: shakeThatBooty 0.3s linear 1;
+    -moz-animation: shakeThatBooty 0.3s linear 1;
+    -o-animation: shakeThatBooty 0.3s linear 1;
+}
+
+@keyframes shakeThatBooty {
+33% {
+     transform: rotateZ(10deg);
+}
+67% {
+     transform: rotateZ(-10deg);
+}
+100% {
+     transform: rotateZ(10deg);
+}
+}
+
+@-webkit-keyframes shakeThatBooty {
+33% {
+    transform: rotateZ(8deg);
+}
+67% {
+    transform: rotateZ(-8deg);
+}
+100% {
+    transform: rotateZ(8deg);
+}
+}
+
+@-moz-keyframes shakeThatBooty {
+33% {
+    transform: rotateZ(8deg);
+    }
+67% {
+    transform: rotateZ(-8deg);
+    }
+100% {
+    transform: rotateZ(8deg);
+    }
+}
+
+@-o-keyframes shakeThatBooty {
+33% {
+    transform: rotateZ(8deg);
+    }
+67% {
+    transform: rotateZ(-8deg);
+    }
+100% {
+    transform: rotateZ(8deg);
+    }
+}
+
+
+    
+
+#roundBtn{
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    /* color: #FFFEFF; */
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.2px;
+    /* background-color: none; */
+}
+#cardShadow{
+    box-shadow: 10px 20px 12px rgba(0, 0, 0, .44)
+}
+#cardBodyMarginFix{
+    padding: 10px;
+}
+.whiteLinkText{
+    color: #FFFEFF;
+}
+.whiteLinkText:hover{
+    color: #1E1B18;
+}
+.cardSizing{
+    width: 84%;
+}
+
+/* 
+.cardFlipContainer{
+    perspective: 1000px;
+}
+.cardFlipInner{
+    transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+cardFlipContainer:hover .cardFlipInner{
+    transform: rotateY(180deg);
+}
+
+.cardFlipFront, .cardFlipBack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.cardFlipBack{
+    transform: rotateY(180deg);
+} */
+
+
+
+/* portfolioPage */
+.linkTitle{
+    /* background-color: #FFFEFF; */
+    padding: .5em;
+    text-decoration: underline;
+    /* font-family:  */
+    /* color: #FFFEFF; */
+    letter-spacing: 1.9px;
+    /* font-weight: bold; */
+    font-size: 2em;
+    background: #FFFEFF;
+}
+
+.linkTitle:hover, .linkTitle:hover .portfolioHover {
+    color: #FFFEFF;
+    background: #4169E1;
+}
+
+.customImagePanel{
+    /* position: absolute; */
+    height: 80vh;
+    /* overflow: hidden; */
+}
+.controlPanel{
+    background: linear-gradient(rgba(30,27,24,.6), rgba(255,254,255,.8));
+    /* opacity: .90; */
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    height: 144px;
+    /* margin: auto; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.projectDisplay{
+    text-align: left;
+    background: #4169E1;
+    width: 200px;
+    height: 110px;
+    margin: auto;
+    /* margin-bottom: 5px; */
+    opacity: .6;
+    box-shadow: 8px 8px 5px #1E1B18;
+    -webkit-transition: 0.45s all ease;
+    -moz-transition: 0.45s all ease;
+    -o-transition: 0.45s all ease;
+    transition: 0.45s all ease;
+}
+.projectDisplay:hover{
+    box-shadow: 15px 0px 10px #1E1B18;
+    opacity: 1;
+    /* text-align: center; */
+}
+.selectedCard{
+    /* box-shadow: 12px 0px 10px #1E1B18;
+    opacity: 1; */
+    box-shadow: 15px 0px 10px #1E1B18;
+    opacity: 1;
+    padding: 0px;
+    margin: 8px;
+    height: 90%;
+    width: 300px;
+    text-align: center;
+    -webkit-transition: 0.7s all ease;
+    -moz-transition: 0.7s all ease;
+    -o-transition: 0.7s all ease;
+    transition: 0.7s all ease;
+    font-size: 1.5em;
+}
+
+
+
+
+/* contactPage */
+.contactFont{
+    font-size: 2em;
+}
+.contactHover:hover{
+    color: #1E1B18;
+}
+
+
+
+
+/* media Query's for nav before burger menu */
+/* @media only screen and (max-width: 1000px){
+    
+    .fab{
+        font-size: 170%;
+    }
+
+} */
+
+/* @media only screen and (max-width: 940px){
+
+    .customFontSize{
+        font-size: 1.05em;
+    }
+
+} */
+
+
+
+
+
+
+
+
+
+
+/* burger menu icon -> template code  */
+
+#nav-icon2 {
+    width: 70px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 1;
+}
+
+#nav-icon2 span.lightBurgerMenu{
+    background: #FFFEFF;
+}
+
+#nav-icon2 span {
+  /* display: block; */
+  position: absolute;
+  height: 8px;
+  width: 50%;
+    /* background: #FFFEFF */
+  /* if on black backgorund then turn blue */
+  background: #1E1B18;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .29s ease-in-out;
+  -moz-transition: .29s ease-in-out;
+  -o-transition: .29s ease-in-out;
+  transition: .29s ease-in-out;
+}
+
+#nav-icon2 span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 9px 9px 0;
+}
+
+#nav-icon2 span:nth-child(odd) {
+  left:0px;
+  border-radius: 9px 0 0 9px;
+}
+
+#nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
+  top: 0px;
+}
+
+#nav-icon2 span:nth-child(3), #nav-icon2 span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon2 span:nth-child(5), #nav-icon2 span:nth-child(6) {
+  top: 36px;
+}
+
+#nav-icon2.open span:nth-child(1),#nav-icon2.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon2.open span:nth-child(2),#nav-icon2.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon2.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+#nav-icon2.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+#nav-icon2.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+
+#nav-icon2.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
+}
+
+
+/* burger menu custom color according to background */
+.colorCheckerResult{
+    background: #1E1B18;
+}
+
+
+/* burger menu overlay @ md breakPoint  */
+#responsiveNav{
+    /* transition:  */
+    display: block;
+    width: 0;
+    height: 300vh;
+    /* z-index: 1; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* background-color: rgba(0,0,0, 0.9); */
+    /* transition: 1s; */
+    text-align: center;
+    /* color: #FFFEFF; */
+    transition: .8s;
+}
+
+#responsiveNav.open.verticalNav{
+    /* background: rgba(0,0,0, 0.6); */
+}
+
+#responsiveNav.open{
+    width: 100%;
+}
+
+#responsiveNav.open .nav-link.hoverEffect{
+    width: 25%;
+    /* z-index: 200; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 1em 0; */
+    font-size: 1.5em;
+}
+
+nav#responsiveNav.open .iconWrapper{
+    position: static;
+    width: 50%;
+    margin: auto;
+}
+
+#responsiveNav.open .nav-link.firstInLine{
+    margin-top: 10%;
+}
+
+
+/* media Query */
+
+
+/* for portfolio */
+@media only screen and (max-width: 1408px){
+
+/* card text size */
+/* .projectDisplay h3{
+    font-size: 1.3em;
+} */
+
+}
+/* for portfolio */
+@media only screen and (max-width: 1326px){
+
+
+
+}
+
+@media only screen and (max-width: 1140px){
+    .fab{
+    font-size: 180%;
+    }
+}
+
+/* media query for the responsive Nav */
+@media only screen and (max-width: 991px){
+    .verticalNav{
+        /* background: #4169E1; */
+        display: none;
+    }
+    .fab{
+        font-size: 300%;
+    }
+    .dropdownText{
+        width: 75vw;
+        /* padding-left: 2em; */
+    }
+
+    #ufoImageContainer{
+        /* width: 20vw; */
+        /* position: absolute; */
+        top: 7vh;
+        left: 50vw;
+        
+    }
+    
+    /* for ufo animation */
+    /* .ufoImage{
+        animation: ufoRotation 2.7s linear infinite;
+        -webkit-animation: ufoRotation 2.7s linear infinite;
+        -moz-animation: ufoRotation 2.7s linear infinite;
+        -o-animation: ufoRotation 2.7s linear infinite;
+    } */
+    @keyframes ufoRotation{
+        0% {
+            transform: rotate(0deg) translate(1.5rem) rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(-360deg) translate(1.5rem) rotate(360deg);
+        }
+    }
+    @-webkit-keyframes ufoRotation{
+        0% {
+            transform: rotate(0deg) translate(1.5rem) rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(-360deg) translate(1.5rem) rotate(360deg);
+        }
+    }
+    @-moz-keyframes ufoRotation{
+        0% {
+            transform: rotate(0deg) translate(1.5rem) rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(-360deg) translate(1.5rem) rotate(360deg);
+        }
+    }
+    @-o-keyframes ufoRotation{
+        0% {
+            transform: rotate(0deg) translate(1.5rem) rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(-360deg) translate(1.5rem) rotate(360deg);
+        }
+    }
+
+
+/* about page skills list  */
+.textStyle {
+    /* padding-left: 0; */
+    /* line-height: 1.7em; */
+    /* font-family: 'EB Garamond', serif; */
+    /* letter-spacing: .3px; */
+}
+
+/* for link block on portfolio page */
+.linkTitle{
+    position: relative;
+    top: 162px;
+    border: 1px solid black;
+}
+
+#navIcon{
+    transform: rotate(0deg);
+}
+
+.fab{
+    text-shadow: none;
+}
+
+/* .verticalNav{
+    transition: width 1s;
+} */
+
+
+}
+
+/* tablet */
+@media only screen and (max-width: 768px){
+    
+    /* home */
+
+    /* for UFO */
+    #ufoImageContainer {
+        width: 110px;
+        /* position: absolute; */
+        top: 4vh;
+        left: 6vw;
+    }
+
+    /* for drop Downs */
+    .panel-heading, .panel{
+        display: inline-block;
+    }
+
+    #downloadBtnContainer{
+        width: 50%;
+    }
+
+    #downloadBtnContainer{
+        animation: none;
+    }
+
+    .linkTitle{
+        top: 130px;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    .cutomAboutTextHeader{
+        font-size: 5.4vw;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #downloadBtnContainer{
+        border-radius: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .cutomAboutText{
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+
+    .cutomAboutTextHeader{
+        font-size: 6.4vw;
+    }
+
+    .textStyle{
+        list-style: none;
+    }
+
+    .linkTitle{
+        top: 137px;
+        font-size: 1.3em;
+    }
+   
+    .selectedCard{
+        width: 273px
+    }
+
+}
+
+@media only screen and (max-width: 532px){
+    .linkTitle{
+        font-size: 1em;
+        top: 244px;
+    }
+
+#changeImage{
+    margin-top: 20vw;
+}
+
+}
+
+@media only screen and (max-width: 507px){
+
+    .cutomAboutTextHeader{
+        font-size: 6vw;
+    }
+
+}
+
+@media only screen and (max-width: 495px){
+
+    .linkTitle{
+        top: 228px;
+    }
+
+}
+
+/* media queries for the icon  */
+@media only screen and (max-width: 425px){
+    #nav-icon2 {
+        width: 60px;
+        /* position: absolute; */
+        /* top: 25px; */
+        right: 28px;
+        /* z-index: 200; */
+}
+nav#responsiveNav.open .iconWrapper{
+    width: 75%;
+    margin-top: 3em;
+}
+
+#ufoImageContainer {
+    width: 90px;
+    /* position: absolute; */
+    top: 0;
+    left: 6vw;
+}
+
+h2.hoverTitleText {
+    font-size: 3em;
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+}
+
+.dropdownText {
+    width: 95vw;
+}
+
+#responsiveNav.open .nav-link.hoverEffect{
+    width: 100%;
+}
+
+#responsiveNav.open .nav-link.firstInLine {
+    margin-top: 20%;
+}
+
+#responsiveNav.open .nav-link.hoverEffect {
+    /* width: 25%; */
+    /* z-index: 200; */
+    /* margin: 1em auto; */
+    /* padding: 1em 0; */
+    font-size: 1.5em;
+
+}
+
+
+}
+
+@media only screen and (max-width: 416px){
+
+    .linkTitle {
+        top: 206px;
+    }
+
+}
+
+
+@media only screen and (max-width: 387px){
+
+    .linkTitle {
+        top: 103px;
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+    #nav-icon2 {
+        width: 55px;
+        right: 20px;
+        /* z-index: 200; */
+}
+
+/* for contact page font size */
+.contactFont {
+    font-size: 1.75em;
+}
+
+}
+
+@media only screen and (max-width: 375px){
+
+#responsiveNav.open .nav-link.firstInLine{
+    margin-top: 25%;
+}
+
+}
