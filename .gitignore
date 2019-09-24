@@ -1,4 +1,6 @@
 #ignore these files
 .DS_Store
 .htaccess
-
+.well-known/ 
+cgi-bin/
+acme-challenge/
