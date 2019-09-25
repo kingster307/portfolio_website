@@ -9,4 +9,8 @@
 * JS
 * continuous integration via gitHub's webhooks. (would've used jenkins but thought it'd be to easy)
   * Master branch is for live site (kingpete.net)
-* still a rough work in progress.
+* usage of advanced git
+* usage of ssh && utilities of ssh
+* usage of enviornment variables
+* usage of token authentication for webhook route
+* usage of apache modules
