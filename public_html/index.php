@@ -30,7 +30,7 @@
 
 <body>
 
-<h1>it works</h1>
+
 	<div class="container-fluid">
 
 		<div class="row">
