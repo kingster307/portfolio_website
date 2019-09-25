@@ -8,8 +8,11 @@ function verify($reqHead)
 {
   #test http method
   if ($reqHead['REQUEST_METHOD'] == "POST") {
-    #need to check secret for added security
-    return true;
+    #check secret
+    if($reqHead[X-Hub-Signature]==$GLOBALS["secret_token])
+   {
+      return true;
+   }
   }
 }
 
