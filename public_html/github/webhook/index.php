@@ -9,7 +9,7 @@ function verify($reqHead)
   #test http method
   if ($reqHead['REQUEST_METHOD'] == "POST") {
     #check secret
-    if($reqHead[X-Hub-Signature]==$GLOBALS["secret_token"])
+    if($reqHead["X-Hub-Signature"]==$GLOBALS["secret_token"])
    {
       printf("yes");
       return true;
