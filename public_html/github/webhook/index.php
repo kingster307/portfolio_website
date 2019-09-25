@@ -11,7 +11,7 @@ function verify($reqHead)
     #check secret
     if($reqHead["X-Hub-Signature"]==$GLOBALS["secret_token"])
    {
-      printf("yes");
+      //printf("yes");
       return true;
    }
   }
