@@ -40,7 +40,7 @@ function run($verified, $data)
     {
      #run shell commands line 40
      $output = shell_exec($commands); 
-     printf("output " . $output);
+    #printf("output " . $output);
     }else{
      echo("wrong branch ");    
     }    
@@ -50,6 +50,7 @@ function run($verified, $data)
 
  }
 
+#entry point
 run(verify($_SERVER), $data);
 
 ?>
