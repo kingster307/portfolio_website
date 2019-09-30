@@ -35,9 +35,38 @@ function run($verified, $data)
       echo ("branch error");
     }
   } else {
-    echo ("not verified");
+    $clientIpAddress = findRequestIpAddress($_SERVER);
+    $clientIpData = findGeoLocation($clientIpAddress);
+    echo ("<h1>not verified.</h1> <br> 
+          <strong> finding request IP... </strong> <br>" . 
+          "IP Address: " . $clientIpAddress . 
+          "<br> <strong>finding location ... </strong>" . 
+          "<br> location: " . $clientIpData["data"]["geo"]["city"] . ", " . $clientIpData["data"]["geo"]["region_code"] . 
+          "<br> <strong> Finding ISP... </strong> <br>" . 
+          "ISP: " . $clientIpData["data"]["geo"]["isp"]
+        );
+    
   }
 }
 
+function findRequestIpAddress($reqHeader)
+{
+  if (!empty($reqHeader['REMOTE_ADDR'])) {
+    $ip  = $reqHeader['REMOTE_ADDR'];
+  } elseif (!empty($reqHeader['HTTP_X_FORWARDED_FOR'])) {
+    $ip = $reqHeader['HTTP_X_FORWARDED_FOR'];
+  } else {
+    $ip  = $reqHeader['HTTP_CLIENT_IP'];
+  }
+  return $ip;
+}
+
+function findGeoLocation($ip)
+{
+
+  // make request to api 
+  $result = json_decode(shell_exec("curl https://tools.keycdn.com/geo.json?host=$ip"), 1);
+  return $result;
+}
 #entry point
 run(verify($_SERVER), $data);
