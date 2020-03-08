@@ -4,4 +4,4 @@
 .well-known/ 
 cgi-bin/
 acme-challenge/
-#readMe.md
+env.php
