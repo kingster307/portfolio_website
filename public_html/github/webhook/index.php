@@ -25,7 +25,7 @@ function run($verified, $data, $remote){
     $branch = explode("/", $data["ref"])[2];
     $action = "pull ";
     $commands = "git " . $action . $remote . $branch;
-    if ($branch == " sandbox") {
+    if ($branch === "sandbox") {
       echo(" " . $commands);
       shell_exec($commands);
     } else {
