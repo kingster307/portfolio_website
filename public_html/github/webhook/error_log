@@ -1,9 +1,0 @@
-[24-Sep-2019 19:11:40 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) in /home2/kingster307/kingpete.net/public_html/github/webhook/index.php on line 14
-[24-Sep-2019 19:44:07 America/Chicago] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /home2/kingster307/kingpete.net/public_html/github/webhook/index.php on line 17
-[24-Sep-2019 19:49:43 America/Chicago] PHP Parse error:  syntax error, unexpected '$commands' (T_VARIABLE), expecting ',' or ')' in /home2/kingster307/kingpete.net/public_html/github/webhook/index.php on line 41
-[30-Sep-2019 12:25:28 America/Chicago] PHP Warning:  Illegal string offset 'isp' in /home2/kingster307/dev.kingpete.net/public_html/github/webhook/index.php on line 35
-[30-Sep-2019 12:27:01 America/Chicago] PHP Warning:  Illegal string offset 'isp' in /home2/kingster307/dev.kingpete.net/public_html/github/webhook/index.php on line 35
-[30-Sep-2019 12:27:04 America/Chicago] PHP Warning:  Illegal string offset 'isp' in /home2/kingster307/dev.kingpete.net/public_html/github/webhook/index.php on line 57
-[30-Sep-2019 12:27:46 America/Chicago] PHP Warning:  Illegal string offset 'isp' in /home2/kingster307/dev.kingpete.net/public_html/github/webhook/index.php on line 57
-[30-Sep-2019 12:29:34 America/Chicago] PHP Warning:  Illegal string offset 'data' in /home2/kingster307/dev.kingpete.net/public_html/github/webhook/index.php on line 36
-[30-Sep-2019 12:29:40 America/Chicago] PHP Warning:  Illegal string offset 'data' in /home2/kingster307/dev.kingpete.net/public_html/github/webhook/index.php on line 36
