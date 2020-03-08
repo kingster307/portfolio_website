@@ -140,6 +140,9 @@
 	<script src="js/main.js"></script>
 
 	<!-- home message -->
+	<script>
+		console.log("test");
+	</script>
  	<!-- <script>
 // 		$('.panel').ready(function () {
 // 			alert("responsiveness for 5k & content still in progress.")
