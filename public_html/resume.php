@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="mb-4 mt-5 mt-md-2 mt-lg-0 mb-lg-3 btn-lg hoverEffect" id="downloadBtnContainer">
-                        <a href="documents/peterKingResume.pdf" class="text-capitalize whiteLinkText resumeButtonClick"
+                        <a href="peter_king_resume_Gen-3.pdf" class="text-capitalize whiteLinkText resumeButtonClick"
                             download="peterKingResume.pdf" target="_blank">Download Resume</a>
                     </div>
 
